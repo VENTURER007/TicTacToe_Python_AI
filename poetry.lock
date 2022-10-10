@@ -1,0 +1,15 @@
+[[package]]
+name = "jupyterlab-tabnine"
+version = "0.0.24"
+description = "JupyterLab client for Tabnine"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "14d2e1aec24e87e921b1388c142a4191a6e86f85bba83500d20d943c64bfaa62"
+
+[metadata.files]
+jupyterlab-tabnine = []

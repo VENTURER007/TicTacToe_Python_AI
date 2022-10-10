@@ -38,4 +38,22 @@ def isWinner(board,letter):
      
    
 
-print(isWinner(board, " "))
+def playerMove():
+  run = True
+  while run:
+    move = input("Enter the position of X between 1 to 9")
+    try:
+      move = int(move)
+      if move > 0 and move < 10:
+        if isFreeSpace(move):
+          run = False
+          insertLetter("X",move)
+          printBoard(board)
+        else:
+          print("The position is already occupied")
+      else:
+        print("Enter a number between 1-9")
+    except:
+      print("Enter an integer")
+
+playerMove()
